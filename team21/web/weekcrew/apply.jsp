@@ -1,4 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<%
+    String path22=request.getContextPath();
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,7 +79,7 @@
             <div class="page_wrap">
                 <h2 class="page_tit">윜크루 되기</h2>
                 <hr>
-                <form action="/weekcrew/applyPro.jsp" method="post">
+                <form action="<%=path22 %>/weekcrew/applyPro.jsp" method="post">
                     <table class="tb1">
                         <thead>
                             <th><label for="name">이름</label></th>
